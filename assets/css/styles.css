@@ -1,0 +1,106 @@
+body {
+    background-color: black; 
+    font-family: 'Acme', sans-serif;
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*----------HOME----------*/
+.homepage {
+    background-image: url('../images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top {
+    padding-top: 70px; 
+}
+
+.name {
+    margin: 0;
+    padding: 0 20px;
+    color: #CF7527;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+@media only screen and (min-width: 768px) {     
+   .top {
+        padding-top: 10%;
+   }
+   .name {
+       font-size: 6em; 
+    }
+}
+
+.job {
+    color: #CF7527;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+/*----------NAVBAR----------*/
+
+.navbar-brand {
+    color: #CF7527;
+    font-size: 15px;
+}
+
+.bar-icon {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #CF7527;
+    margin: 6px 0;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0, 0.5);
+    text-align: right;
+}
+
+.nav-item a {
+    color: #CF7527;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: black;
+    background-color: #CF7527;
+}
+
+.navbar .navbar-collapse {
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+}
+
+/*----------FOOTER----------*/
+
+.footer-icon-row {
+    margin: 10px auto;
+    text-align: center;
+}
+
+img.icon {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+}
+
+
+
