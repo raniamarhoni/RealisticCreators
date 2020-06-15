@@ -5,15 +5,8 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
-/*----------HOME----------*/
-.homepage {
-    background-image: url('../images/home.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-}
+
+/*----------Dark overlay on images----------*/
 
 .opaque-overlay {
     position: absolute;
@@ -22,6 +15,16 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*----------HOME----------*/
+.homepage {
+    background-image: url('../images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
 }
 
 .top {
@@ -36,7 +39,7 @@ body {
     font-size: 3.5em;
 }
 
-@media only screen and (min-width: 768px) {     
+@media only screen and (min-width: 768px) {
    .top {
         padding-top: 10%;
    }
@@ -89,6 +92,40 @@ body {
     transition-duration: 2s;
 }
 
+/*----------ABOUT----------*/
+
+.about-header {
+    color: #CF7527;
+    padding: 30px 10px 15px;
+    font-size: 45px;
+}
+
+.about-para {
+    color: #CF7527;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 15px 10px;
+
+}
+@media (max-width: 992px) {
+    .about-header {
+        text-align: center;
+    }
+}
+@media (min-width: 992px) {
+
+    .about-image {
+        background-image: url('../images/about.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    .about-header {
+        font-size: 65px;
+    }
+
 /*----------FOOTER----------*/
 
 .footer-icon-row {
@@ -97,10 +134,6 @@ body {
 }
 
 img.icon {
-    width: 65px;
     height: 65px;
     display: inline-block;
 }
-
-
-
