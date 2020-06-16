@@ -2,8 +2,13 @@ body {
     background-color: black; 
     font-family: 'Acme', sans-serif;
     margin: 0px;
-    max-width: 100%;
+    max-width: 100%  !important;
     overflow-x: hidden;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 /*----------Dark overlay on images----------*/
@@ -98,6 +103,7 @@ body {
     color: #CF7527;
     padding: 30px 10px 15px;
     font-size: 45px;
+    text-align: center;
 }
 
 .about-para {
@@ -107,17 +113,17 @@ body {
     padding: 15px 10px;
 
 }
-@media (max-width: 992px) {
-    .about-header {
-        text-align: center;
-    }
-}
+
 @media (min-width: 992px) {
 
     .about-image {
         background-image: url('../images/about.jpg');
         background-position: center;
         background-size: cover;
+    }
+
+    .about-header {
+        text-align: left;
     }
 
 }
