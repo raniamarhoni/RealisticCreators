@@ -11,12 +11,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 	<!--CSS LINK-->
 	<link rel="stylesheet" href="assets/css/styles.css">
+    <!--Emailjs Javascipt LINK-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function() {
+            emailjs.init("user_uW98FIxfPrehvxTTNLbxY");
+        })();
+	</script>
+    <!--Title-->
 	<title>Realistic Creators</title>
 </head>
 
 <body>
 	<!--*******HOMEPAGE*******-->
-	<header class="homepage">
+	<header id="home" class="homepage">
 		<div class="opaque-overlay">
 
 			<!--NAVBAR-->
@@ -31,10 +39,10 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href=#>Home</a>
+							<a class="nav-link" href=#home>Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href=#>About</a>
+							<a class="nav-link" href=#about>About</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href=#>Photography</a>
@@ -43,7 +51,7 @@
 							<a class="nav-link" href=#>Video/Cinematography</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href=#>Contact Us</a>
+							<a class="nav-link" href=#contact>Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -58,7 +66,7 @@
 	</header>
 
 	<!--*******ABOUT*******-->
-	<section class="about-section">
+	<section id="about" class="about-section">
 		<div class="cointainer-fluid">
 			<div class="row">
 				<div class="about-text col-lg-6 col-md-12">
@@ -83,6 +91,22 @@
 		</div>
 	</section>
 
+	<!--*******CONTACT SECTION *******-->
+	<section id="contact">
+		<div class="opaque-overlay">
+			<div class="contact-section">
+				<h2 class="contact-header">Contact Us</h2>
+                <!--*******FORM*******-->
+				<form id='contact-form' onsubmit="return sendMail(this);">
+					<input type="text" class="form-box" name='name' id="name" placeholder="Name:" required>
+					<input type="email" class="form-box" name='emailaddress' id="emailaddress" placeholder="Email:" required>
+					<textarea class="message-box" name="projectsummary" rows="5" placeholder="Message:" id="projectsummary" required></textarea>
+					<button type="submit" class="btn-style">Send</button>
+                </form>
+			</div>
+		</div>
+	</section>
+
 	<!--*******FOOTER*******-->
 	<footer>
 		<div class="footer-icon-row">
@@ -95,7 +119,7 @@
 		</div>
 	</footer>
 
-
+    <script src="assets/js/sendEmail.js"></script>"
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 	</script>
@@ -105,6 +129,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
+
 </body>
 
 </html>

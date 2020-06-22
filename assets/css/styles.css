@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
 }
 
+/*----------Bootstrap grid----------*/
 .row {
     margin-right: 0px;
     margin-left: 0px;
@@ -14,7 +15,6 @@ body {
 /*----------Dark overlay on images----------*/
 
 .opaque-overlay {
-    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -23,13 +23,16 @@ body {
 }
 
 /*----------HOME----------*/
+
+
 .homepage {
     background-image: url('../images/home.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100vw;
-    margin-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .top {
@@ -76,7 +79,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: black;
     text-align: right;
 }
 
@@ -99,6 +102,10 @@ body {
 
 /*----------ABOUT----------*/
 
+.about-text {
+    padding: 50px 20px;
+}
+
 .about-header {
     color: #CF7527;
     padding: 30px 10px 15px;
@@ -120,6 +127,8 @@ body {
         background-image: url('../images/about.jpg');
         background-position: center;
         background-size: cover;
+        margin: 0px;
+        padding: 0px;
     }
 
     .about-header {
@@ -132,6 +141,89 @@ body {
         font-size: 65px;
     }
 }
+
+/*----------CONTACT----------*/
+
+#contact {
+    background-image: url('../images/contact.jpg');
+    background-size: cover;
+    background-position: right;
+    margin: 0px;
+    padding: 0px; 
+    width: 100%;
+}
+
+.contact-section {
+    padding: 50px 20px;
+}
+.contact-header {
+    color: #CF7527;
+    padding: 30px 10px 15px;
+    font-size: 45px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-header {
+        font-size: 65px;
+    }
+}
+
+.contact-form {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.form-box {
+    display: block;
+    color: #CF7527;
+    background-color: white;
+    border: 5px solid #CF7527;
+    border-radius: 10px;
+    margin: 15px auto 0px;
+    padding: 10px;
+    width: 90%;
+    max-width: 550px;
+    font-family: sans-serif;
+}
+
+.form-box::placeholder{
+    color: #CF7527;
+    font-family: sans-serif;
+}
+
+.message-box{
+    display: block;
+    color: #CF7527;
+    background-color: white;
+    border: 5px solid #CF7527;
+    border-radius: 10px;
+    margin: 15px auto 0px;
+    padding: 10px;
+    width: 90%;
+    max-width: 550px;
+    font-family: sans-serif;
+}
+
+
+.message-box::placeholder{
+    color: #CF7527;
+    font-family: sans-serif;
+}
+
+.btn-style{
+    display: block;
+    background-color: black;
+    color: #CF7527;
+    margin: 15px auto 0px;
+    border: 5px solid #CF7527;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+
 
 /*----------FOOTER----------*/
 
